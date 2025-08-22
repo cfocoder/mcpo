@@ -145,10 +145,10 @@ The `mcpo.sh` script is a game-changer for managing the MCPO installation. Here 
 Once MCPO is running, integrate it with Open WebUI using these OpenAPI endpoints:
 
 1. **Access Open WebUI Admin Panel**
-   - Go to Settings → Functions
-   - Click "Add Function"
+   - Go to Settings → Tools
+   - Click "Manage Tool Servers"
 
-2. **Add MCPO Functions**
+2. **Add MCPO Tools**
 
    For each service, add the corresponding OpenAPI URL:
 
@@ -171,7 +171,7 @@ Once MCPO is running, integrate it with Open WebUI using these OpenAPI endpoints
 
 3. **Test Integration**
    - Create a new chat in Open WebUI
-   - Try using the new functions:
+   - Try using the new tools:
      ```
      Search for recent AI research papers about transformers
      What's the weather in San Francisco?
@@ -277,7 +277,7 @@ sudo tailscale serve status
 1. **Check MCPO Status**: `./mcpo.sh status`
 2. **Test API Health**: `curl http://localhost:8001/health`
 3. **View Documentation**: Visit `http://localhost:8001/docs`
-4. **Test Function Call**: Use Open WebUI to call a function
+4. **Test Tool Call**: Use Open WebUI to call a function
 5. **Monitor Logs**: `./mcpo.sh logs -f` during testing
 
 ## 🎯 Pro Tips from Today's Experience
@@ -296,7 +296,7 @@ The installation includes `config.working-example.json` and `.env.working-exampl
 Start with one or two MCP servers, verify they work in Open WebUI, then add more. This makes debugging much easier.
 
 ### 4. Monitor Logs During Integration
-When adding functions to Open WebUI, keep `./mcpo.sh logs -f` running to see real-time API calls and catch issues immediately.
+When adding tools to Open WebUI, keep `./mcpo.sh logs -f` running to see real-time API calls and catch issues immediately.
 
 ### 5. Use Health Endpoints
 Always verify `http://localhost:8001/health` before troubleshooting complex issues.

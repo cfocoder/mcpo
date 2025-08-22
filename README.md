@@ -105,7 +105,7 @@ http://localhost:8001/perplexity/openapi.json
 http://localhost:8001/memory/openapi.json
 ```
 
-Add these URLs in Open WebUI Settings → Functions → Add Function.
+Add these URLs in Open WebUI Settings → Tools → Manage Tool Servers.
 
 ## 📁 Repository Structure
 
