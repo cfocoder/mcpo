@@ -1,0 +1,126 @@
+{
+  "mcpServers": {
+    "memory": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-memory"],
+      "description": "Persistent memory and knowledge management across conversations"
+    },
+    "filesystem": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-filesystem"],
+      "description": "Read and write files on the local filesystem"
+    },
+    "github": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-github"],
+      "description": "GitHub repository management and operations",
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": ""
+      }
+    },
+    "postgres": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-postgres"],
+      "description": "PostgreSQL database operations",
+      "env": {
+        "POSTGRES_CONNECTION_STRING": ""
+      }
+    },
+    "brave-search": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-brave-search"],
+      "description": "Web search using Brave Search API",
+      "env": {
+        "BRAVE_API_KEY": ""
+      }
+    },
+    "puppeteer": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-puppeteer"],
+      "description": "Web automation and browser control"
+    },
+    "slack": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-slack"],
+      "description": "Slack workspace management",
+      "env": {
+        "SLACK_BOT_TOKEN": "",
+        "SLACK_APP_TOKEN": ""
+      }
+    },
+    "youtube-transcript": {
+      "command": "npx",
+      "args": ["-y", "@kimtaeyoon83/mcp-server-youtube-transcript"],
+      "description": "Extract transcripts from YouTube videos"
+    },
+    "time": {
+      "command": "uvx",
+      "args": ["mcp-server-time", "--local-timezone=America/New_York"],
+      "description": "Current time and timezone operations"
+    },
+    "weather": {
+      "command": "uvx", 
+      "args": ["mcp-server-weather"],
+      "description": "Weather information and forecasts",
+      "env": {
+        "WEATHER_API_KEY": ""
+      }
+    },
+    "docker": {
+      "command": "uvx",
+      "args": ["mcp-server-docker"],
+      "description": "Docker container management and operations"
+    },
+    "git": {
+      "command": "uvx",
+      "args": ["mcp-server-git"],
+      "description": "Git repository operations and version control"
+    },
+    
+    "NEW SERVERS - ADD BELOW THIS LINE": {
+      "comment": "Examples of additional servers you can add"
+    },
+    
+    "mysql": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-mysql"],
+      "description": "MySQL database operations",
+      "env": {
+        "MYSQL_CONNECTION_STRING": "mysql://user:password@localhost:3306/database"
+      }
+    },
+    "sqlite": {
+      "command": "npx", 
+      "args": ["-y", "@modelcontextprotocol/server-sqlite", "/path/to/database.db"],
+      "description": "SQLite database operations"
+    },
+    "gdrive": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-gdrive"],
+      "description": "Google Drive file operations",
+      "env": {
+        "GOOGLE_CLIENT_ID": "",
+        "GOOGLE_CLIENT_SECRET": "",
+        "GOOGLE_REFRESH_TOKEN": ""
+      }
+    },
+    "sequential-thinking": {
+      "command": "uvx",
+      "args": ["mcp-server-sequential-thinking"],
+      "description": "Advanced reasoning and step-by-step problem solving"
+    },
+    "everart": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-everart"],
+      "description": "AI image generation via EverArt API",
+      "env": {
+        "EVERART_API_KEY": ""
+      }
+    },
+    "fetch": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-fetch"],
+      "description": "Fetch and analyze web content"
+    }
+  }
+}
