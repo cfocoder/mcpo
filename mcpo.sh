@@ -109,7 +109,7 @@ show_status() {
     
     echo ""
     log_info "Health Checks:"
-    if curl -sf http://localhost:8000/health > /dev/null 2>&1; then
+    if curl -sf http://localhost:8001/docs > /dev/null 2>&1; then
         log_success "MCPO health check: PASSED"
     else
         log_error "MCPO health check: FAILED"

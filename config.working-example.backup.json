@@ -101,13 +101,6 @@
       "description": "Perplexity AI conversational search and Q&A",
       "env": {
         "PERPLEXITY_API_KEY": "${PERPLEXITY_API_KEY}"
-    },
-    "vizro": {
-      "command": "uvx",
-      "args": [
-        "vizro-mcp"
-      ],
-      "description": "McKinsey Vizro - Enterprise-grade data visualization and dashboard creation with live preview"
       }
     }
   }
